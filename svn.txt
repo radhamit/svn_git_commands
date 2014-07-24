@@ -1,0 +1,65 @@
+
+
+CHECKOUT 
+
+svn checkout svn://svn.COMPANY.com/trunk/ --username USER
+	--password PASS DEST_FOLDER
+	
+
+UPDATE 
+
+svn update --username USER --password PASS
+
+A=Added, D=Deleted, U=updated, C=Conflict, G=Merged
+
+
+ADD 
+
+svn add FILE --username USER --password PASS
+svn add DIRECTORY // will recursively add files by default
+svn add --non-recursive DIRECTORY // will not add the files 
+ 
+
+DELETE
+
+svn delete FILE --username USER --password PASS
+svn delete --force FILE
+
+
+STATUS
+
+svn status DIRECTORY --username USER --password PASS
+
+A = Added, D = deleted, M= modified, ?=Not in version control, 
+ 
+svn status --show-updates DIRECTORY // this will show the out of date files (with respect to svn)
+
+
+COMMIT
+
+ svn commit -m msg   --username USER --password PASS
+ svn commit -F msg foo.c  // commit a file 
+  svn commit -m "removed file 'c'."  // commit files deleted
+  
+  
+ COPY //CREATE A BRANCH 
+ 
+ svn copy FILE1 FILE2
+ svn copy URL_1 URL_2 -m "remote copy."
+ 
+ 
+ 
+ 
+ 
+ links 
+ 
+ http://www.linuxfromscratch.org/blfs/edguide/chapter03.html
+ 
+ http://svnbook.red-bean.com/en/1.2/svn.ref.svn.c.checkout.html
+ http://svnbook.red-bean.com/en/1.2/svn.ref.svn.c.add.html
+ http://svnbook.red-bean.com/en/1.2/svn.ref.svn.c.delete.html
+ http://svnbook.red-bean.com/en/1.2/svn.ref.svn.c.status.html
+ http://svnbook.red-bean.com/en/1.2/svn.ref.svn.c.update.html
+ http://svnbook.red-bean.com/en/1.2/svn.ref.svn.c.commit.html
+ http://svnbook.red-bean.com/en/1.2/svn.ref.svn.c.diff.html
+ 
