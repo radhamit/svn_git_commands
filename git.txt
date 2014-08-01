@@ -1,0 +1,75 @@
+
+CREATE A LOCAL GIT REPO AND ADD IT TO THE SERVER
+------------------------------------------------
+
+copy all the code/folders etc
+git init
+git add *
+git commit -m "first commit"
+git remote add origin https://github.com/(Username)/(Repository_name).git
+git push -u origin master
+
+
+CHECKOUT AN EXISTING REPOSITORY
+-------------------------------
+
+git clone https://github.com/radhamit/ant_titbits.git
+
+
+ADD FILES 
+---------
+
+git add FILE_NAME
+git add . // will add all the file names
+
+
+COMMIT FILES 
+------------
+
+git commit -m "Initial commit." FILE_NAME
+git commit -m "Initial commit.". // will commit all files
+
+
+PUSH FILES TO MASTER REPOSITORY
+-------------------------------
+
+git push -u origin master
+
+
+UPDATE FROM REPOSITORY 
+----------------------
+
+git pull
+
+
+MERGE FROM DIFFERENT BRANCH 
+---------------------------
+
+git merge BRANCH_NAME
+
+
+HELPER COMMANDS 
+
+git status
+git log
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+REFERENCES 
+
+https://confluence.atlassian.com/display/STASH/Basic+Git+commands
